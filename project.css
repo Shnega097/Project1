@@ -1,0 +1,285 @@
+ body {
+    margin: 0;
+    padding: 0%;
+    background-image: url(https://t3.ftcdn.net/jpg/06/25/61/56/360_F_625615610_2NuklyLR5edRVNAnMmG7RSDcPG8Jn4Ps.jpg);
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+     }
+
+     header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        background-color: #ff4757;
+      }
+    
+    
+    nav {
+        background-color: #333;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #111;
+    }
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}    
+.logo{
+  display: flex;
+}
+
+.logo img {
+    width: 40px; 
+    height: auto; 
+}
+.search-cart {
+    display: flex;
+    align-items: center;
+   
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+     border-radius: 2px;
+}
+
+.cart-btn {
+    background-color: red;
+    color: #fff;
+    /* padding: 8px 15px; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.cart-btn img {
+    width: 20px; 
+    height: auto;
+    margin-right: 5px;
+}
+#logo{
+  color: white;
+  text-shadow: 2px 2px 2px red;
+padding-top: 8px;
+font-size: larger;
+} 
+
+
+.horizontal-gallery {
+ 
+    overflow-x: hidden;
+    white-space: nowrap;
+    padding: 20px;
+    margin-top: 80px; /* Adjust margin to avoid overlapping with the navbar */
+}
+
+.gallery-container {
+    
+                 display: flex;
+                animation-name: example;
+                animation-duration: 10s;
+                animation-iteration-count: 50;
+                animation: scrollGallery 50s linear infinite; 
+}
+
+.gallery-container img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust the margin between images */
+}
+
+@keyframes scrollGallery {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.second{
+  background-color: black;
+  width: 100%;
+ padding-top:2px;
+}
+
+.third{
+    background-image: url(https://wallpapergod.com/images/hd/horror-1920X1178-wallpaper-wipqucukh5wolwuu.jpeg);
+    display: flex;
+    margin-top: 40px;
+}
+
+.bookimg{
+    margin-left: 100px;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    opacity: 0.5;
+} 
+.bookimg:hover{
+opacity: 1;
+
+}
+
+
+  .h2{
+    color: white;
+    font-family: 'Babylonica', cursive;
+    font-size: 60px;
+    margin-left: 100px;
+    margin-top: 120px;
+    text-shadow: 2px 2px 2px blue;
+   
+    }
+    .button{
+       margin-bottom: 150px;
+    }
+
+    button{
+        width: 100px;
+        background-color: blue;
+        color:white;
+        box-shadow: 2px 2px 2px white;
+        margin-left: 130px;
+     
+    }
+
+    .abc{
+        display: flex;
+        margin-top: 50px;
+       margin-left: 50px;
+       justify-content: space-evenly;
+      
+       
+    }
+    .a{
+        border: 2px solid ;
+        width: 15%;
+       margin-right: 4%;
+        object-fit: cover;
+        opacity: 0.5;
+      }
+     
+    .five{
+
+        /* background-color: black; */
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+   }
+
+   .btn{
+
+    width: 200px;
+    height: 80px;
+    margin-left: 650px;
+    margin-top: 100px;
+    background-image: url("https://wallpapersmug.com/large/a7b5d2/clown-face-creepy-minimal.jpeg");
+    background-size: cover;
+    cursor: pointer;
+    }
+    .btn:hover{
+      width: 200px;
+      height: 100px;
+
+    }
+.h5{
+color: red;
+margin-left: 700px;
+font-size: 20px;
+}
+
+.six{
+ background-color: black; 
+width: 100%;
+height: 350px;
+margin-top: 60px;
+}
+.foot{
+    display: flex;
+    margin-left: 150px;
+    padding-top: 50px;
+}
+
+.fo{
+    color: white;
+    margin-top: 50px;
+}
+.co{
+    color: white;
+    margin-left: 800px;
+    font-size: large;
+}
+.b{
+    color: white;
+    font-size: larger;
+    margin-left:200px ;
+}
+.coo{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

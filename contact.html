@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+         background-image: url(https://thumbs.dreamstime.com/b/scary-house-mysterious-horror-forest-night-107747167.jpg);
+            color: #fff;
+            /* padding-top: 80px; Adjusted for the navbar height */
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group label {
+            color: #aaa;
+        }
+        .form-control {
+            background-color: #333;
+            border: none;
+            color: #fff;
+        }
+        .form-control:focus {
+            background-color: #444;
+            color: #fff;
+        }
+        .btn-primary {
+            background-color: #f00;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #d00;
+        }
+   
+        
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #111;
+        color: white;
+        text-decoration: none;
+    }
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}    
+.logo{
+  display: flex;
+}
+
+.logo img {
+    width: 40px; 
+    height: auto; 
+}
+.search-cart {
+    display: flex;
+    align-items: center;
+   
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+     border-radius: 2px;
+}
+
+
+.one1{
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+
+/* #about {
+    position: relative;
+    overflow: hidden;
+} */
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+    color: white;
+    padding: 20px;
+}
+
+.video-content .container {
+    z-index: 1;
+}
+
+.row{
+    margin-top: 0px;
+    margin-bottom: 200px;
+}
+
+header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        background-color: #ff4757;
+      }
+    
+    </style>
+</head>
+<body>
+    <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/128/4334/4334124.png"  alt="Your Logo" width="50%">
+            <u><em><p id="logo">HORROR WORLD</p></em></u>
+        </div>
+  
+    <ul>
+      <li><a href="file:///C:/Users/Shnega/Desktop/Project/project.html#">Home</a></li>
+      <li><a href="file:///C:/Users/Shnega/Desktop/Project/about.html">About</a></li>
+      <li><a href="file:///C:/Users/Shnega/Desktop/Project/index.html">Products</a></li>
+      <li><a href="#">Contact us</a></li>
+  </ul>
+  
+  </div>
+       
+        <div class="search-cart">
+            <input type="text" placeholder="Search...">
+           
+        </div>
+    </nav> 
+</header>
+
+    <section id="about" class="py-5">
+        <div class="video-background">
+            <video autoplay muted loop id="myVideo">
+                <!-- <source src="https://media.istockphoto.com/id/805015892/video/4k-horror-woman-in-dirty-dress-getting-out-from-well.mp4?s=mp4-640x640-is&k=20&c=7zkjX_JKkTa3MfVCTvrDJhgUWVWZFt9TqvweW4EyoGw=" type="video/mp4"> -->
+                <source src="https://cdn.pixabay.com/video/2021/09/30/90267-620258685_tiny.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="video-content">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div id="successMessage" style="display: none;">
+                        <p>Thank you for your message!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        $(document).ready(function(){
+            $('#contactForm').submit(function(e){
+                e.preventDefault();
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var message = $('#message').val();
+                // Here you can add code to send the form data to your backend for processing.
+                // For now, let's just display a success message.
+                $('#contactForm').hide();
+                $('#successMessage').show();
+            });
+        });
+    </script>
+</body>
+</html>
